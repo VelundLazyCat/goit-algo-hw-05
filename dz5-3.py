@@ -32,11 +32,9 @@ import os
 import sys
 from collections import Counter
 
-path = r'C:\PythonProject\PythonCoreCourse\dz4\logs.txt'
-
 
 def load_logs(file_path: str) -> list:
-    if not os.path.exists(path):
+    if not os.path.exists(file_path):
         input("Файл не існує або шлях до нього вказан невірно")
         sys.exit()
     logs_line = []
